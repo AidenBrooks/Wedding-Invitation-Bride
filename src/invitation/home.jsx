@@ -154,17 +154,17 @@ export function VideoHome({ c, lang, ta, opened }) {
           <Track on={t} delay={500} style={{ fontFamily: serif, fontSize: 12, fontWeight: 600, letterSpacing: ta ? "0" : "0.28em", textTransform: "uppercase", color: gold }}>{c.title}</Track>
         </div>
         <div style={{ marginTop: "clamp(10px, 3.5dvh, 40px)", display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <Ink on={t} delay={900} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>{foilName(2500, n.groom)}</Ink>
-          <Track on={t} delay={1700} style={{ ...qual, letterSpacing: ta ? "0" : "0.3em", marginTop: ta ? 2 : -2 }}>{n.groomTitle}</Track>
-          <div style={{ ...fade(2000, 6), ...parent }}>{n.groomParent}</div>
+          <Ink on={t} delay={900} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>{foilName(2500, n.bride)}</Ink>
+          <Track on={t} delay={1700} style={{ ...qual, letterSpacing: ta ? "0" : "0.3em", marginTop: ta ? 2 : -2 }}>{n.brideTitle}</Track>
+          <div style={{ ...fade(2000, 6), ...parent }}>{n.brideParent}</div>
           <div aria-hidden="true" style={{ display: "flex", alignItems: "center", gap: 12, margin: "clamp(6px, 1.6dvh, 14px) 0" }}>
             {amp("right")}
             <span style={{ ...fade(2100, 0), transform: t ? "none" : "scale(.6)", fontFamily: "var(--font-script)", fontSize: 34, lineHeight: 1, color: gold }}>&amp;</span>
             {amp("left")}
           </div>
-          <Ink on={t} delay={2400} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>{foilName(3900, n.bride)}</Ink>
-          <Track on={t} delay={3200} style={{ ...qual, letterSpacing: ta ? "0" : "0.3em", marginTop: ta ? 2 : -2 }}>{n.brideTitle}</Track>
-          <div style={{ ...fade(3500, 6), ...parent }}>{n.brideParent}</div>
+          <Ink on={t} delay={2400} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>{foilName(3900, n.groom)}</Ink>
+          <Track on={t} delay={3200} style={{ ...qual, letterSpacing: ta ? "0" : "0.3em", marginTop: ta ? 2 : -2 }}>{n.groomTitle}</Track>
+          <div style={{ ...fade(3500, 6), ...parent }}>{n.groomParent}</div>
         </div>
       </div>
       <div aria-hidden="true" style={{ position: "absolute", left: 0, right: 0, bottom: 22, zIndex: 5, display: "flex", flexDirection: "column", alignItems: "center", gap: 6, pointerEvents: "none", opacity: t ? 1 : 0, transition: `opacity 1200ms ${EASE} 4600ms` }}>

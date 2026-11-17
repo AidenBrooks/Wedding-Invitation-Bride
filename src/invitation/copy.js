@@ -45,7 +45,7 @@ export const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=" + enc
 export const MAPS_EMBED = "https://maps.google.com/maps?q=" + encodeURIComponent(VENUE_Q) + "&z=15&output=embed";
 
 const CAL = {
-  title: "Nikkah of Mohamed Ahnaf & Sulaiha Faslin",
+  title: "Nikkah of Sulaiha Faslin & Mohamed Ahnaf",
   start: "20261213T060000Z", end: "20261213T063000Z", // 11:30 AM – 12:00 PM IST
   location: "Sulthar Habeebullah Mahal, Ponnagoundanur Road, Pallapatti - 639 207",
   details: "Nikkah from 11:30 AM to 12 PM. With the blessings of Allah, we invite you to share in the joy of our Nikkah.",
@@ -68,6 +68,6 @@ export function saveTheDate() {
   const ics = new URL(import.meta.env.BASE_URL + "nikkah.ics", window.location.href).href;
   if (ios) { window.location.href = ics; return; }
   if (/Android/i.test(ua)) { const w = window.open(GOOGLE_CAL, "_blank"); if (w) w.opener = null; else window.location.href = GOOGLE_CAL; return; }
-  const a = document.createElement("a"); a.href = ics; a.download = "ahnaf-sulaiha-nikkah.ics";
+  const a = document.createElement("a"); a.href = ics; a.download = "sulaiha-ahnaf-nikkah.ics";
   document.body.appendChild(a); a.click(); a.remove();
 }
