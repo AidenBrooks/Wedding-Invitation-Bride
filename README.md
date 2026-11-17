@@ -34,4 +34,4 @@ Build with `VITE_LANG=ta` (for example, set it as a Vercel environment variable,
 
 ## Open items carried over from the design chats
 - The Tamil wording was written by the design assistant and needs a native reader.
-- The printed card names two halls (Haji Habeeb Shadhi Mahal / Sulthar Habeebullah Mahal). This build uses the Venue line.
+- The bride card lists Nottam Fathima Mahal; it does not include a street address.
